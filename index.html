@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Momentum</title>
 </head>
 <body>
     <main>
-        <div>
-            <img src="#" alt="relógio">
+        <div class="clock-img">
+            <img src="./src/images/clock.png" alt="relógio">
         </div>
         <div class="card">
-            <input type="text" name="new-task" id="new-task" placeholder="Add new task...">
-            <button class="send-btn"></button>
+            <input type="text" name="new-task" class="text-field" id="new-task" placeholder="Add new task...">
+            <button class="send-btn">
+                <span class="material-symbols-outlined">
+                    done
+                </span>
+            </button>
         </div>
         <div class="box-tasks">
             <ul class="task-list">
