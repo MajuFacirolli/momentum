@@ -8,25 +8,28 @@
     <title>Momentum</title>
 </head>
 <body>
+    <header>
+        <h1> <img src="./src/images/clock.png" alt="clock"> Momentum</h1>
+    </header>
     <main>
-        <section>
-            <h1> <img src="./src/images/clock.png" alt="clock"> Momentum</h1>
-            <div class="card">
-                <input type="text" name="new-task" class="text-field" id="new-task" placeholder="Add new task...">
+        <p>Click on the icon <span class="material-symbols-outlined">done</span> to add a new task. <br>
+        Click on the <span class="task">task</span> to delete it.</p>
+        <section class="card">
+            <form action="">
+                <input type="text" name="new-task" class="text-field" id="new-task" placeholder="To-do">
                 <button class="send-btn">
                     <span class="material-symbols-outlined">
                         done
                     </span>
                 </button>
-            </div>
+            </form>
         </section>
-        <aside>
-            <div class="box-tasks">
-                <ul class="task-list">
-                    
-                </ul>
-            </div>
-        </aside>
+        <section class="box-notes">
+            <ul class="note-list">
+                <li class="note">Isso é um teste de nota</li>
+                <li class="disable-item">Isso é um teste de nota</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>

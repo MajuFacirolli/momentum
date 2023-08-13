@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,79 +7,138 @@
 }
 
 body{
-    background-color: #7882A4;
+    background-color: #628E90;
     color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 
-main{
-    height: 100vh;
+header{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 20px;
 }
 
-main section{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-main section h1{
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-size: 36px;
+header h1{
     display: flex;
     align-items: center;
     gap: 15px;
+    color: #d8d9da;
+    font-family: 'Montserrat', sans-serif;
 }
 
-main section img{
+header h1 img{
     width: 45px;
 }
 
-main section .card{
-    background-color: #57638b;
-    width: 450px;
-    height: 55px;
-    border-radius: 10px;
+main{
+    min-height: calc(100vh - 150px);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 0 10px 0;
+    gap: 25px;
 }
 
-main section .card .text-field{
-    background-color: #57638b;
-    width: 350px;
-    height: 30px;
+main p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    text-align: center;
+}
+
+main p .material-symbols-outlined{
+    background-color: #436d63;
+    color: #d8d9da;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+main p .task{
+    background-color: #436d63;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+main .card form{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #436d63;
+}
+
+main .card form .text-field{
+    width: 400px;
+    height: 50px;
     padding: 15px;
     border: none;
     outline: none;
+    background-color: #436d63;
     color: #d8d9da;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
-main section .card .text-field::placeholder{
-    color: #d8d9daa0;
+main .card .text-field::placeholder{
+    color: #d8d9daa9;
 }
 
-main .card .send-btn{
+main .card form .send-btn{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: none;
-    background-color: #d8d9da;
+    background-color: #436d63;
+    color: #d8d9da;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-main .box-tasks{
-    background-color: #57638b;
+main .card form .send-btn:hover{
+    background-color: #243b36;
+}
+
+main .box-notes{
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .box-notes .note-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+main .box-notes .note{
+    background-color:#436d63;
+    color: #d8d9da;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     width: 450px;
-    height: 300px;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
+    transition: 0.4s;
+}
+
+main .box-notes .note:hover{
+    
+    cursor: pointer;
+    background-color: #243b36;
+}
+
+.disable-item{
+    display: none;
 }
