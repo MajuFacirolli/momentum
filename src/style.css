@@ -140,3 +140,37 @@ main .box-notes .note:hover{
     cursor: pointer;
     background-color: #243b36;
 }
+
+@media screen and (max-width: 500px){
+    header h1{
+        font-size: 30px;
+    }
+    
+    header h1 img{
+        width: 30px;
+    }
+
+    main p{
+        font-size: 12px;
+    }
+
+    main .card{
+        width: 300px;
+        height: 40px;
+    }
+
+    main .card .text-field{
+        width: 250px;
+        height: 40px;
+    }
+
+    main .box-notes{
+        width: 300px;
+        min-height: 300px;
+    }
+
+    main .box-notes .note{
+        width: 300px;
+        min-height: 40px;
+    }
+}
