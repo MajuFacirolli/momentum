@@ -19,15 +19,16 @@ header{
 }
 
 header h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #d8d9da;
     display: flex;
     align-items: center;
-    gap: 15px;
-    color: #d8d9da;
     font-family: 'Montserrat', sans-serif;
 }
 
 header h1 img{
-    width: 45px;
+    width: 40px;
 }
 
 main{
@@ -42,6 +43,7 @@ main{
 main p{
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    color: #d8d9da;
     line-height: 20px;
     text-align: center;
 }
@@ -53,13 +55,13 @@ main p .material-symbols-outlined{
     padding: 2px;
 }
 
-main p .task{
+main p .note{
     background-color: #436d63;
     padding: 2px;
     border-radius: 2px;
 }
 
-main .card form{
+main .card{
     width: 450px;
     height: 50px;
     border-radius: 10px;
@@ -69,7 +71,7 @@ main .card form{
     background-color: #436d63;
 }
 
-main .card form .text-field{
+main .card .text-field{
     width: 400px;
     height: 50px;
     padding: 15px;
@@ -85,7 +87,7 @@ main .card .text-field::placeholder{
     color: #d8d9daa9;
 }
 
-main .card form .send-btn{
+main .card .send-btn{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -99,7 +101,7 @@ main .card form .send-btn{
     transition: 0.4s;
 }
 
-main .card form .send-btn:hover{
+main .card .send-btn:hover{
     background-color: #243b36;
 }
 
@@ -137,8 +139,4 @@ main .box-notes .note:hover{
     
     cursor: pointer;
     background-color: #243b36;
-}
-
-.disable-item{
-    display: none;
 }
