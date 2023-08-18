@@ -22,7 +22,7 @@ Momentum provides a clean and user-friendly interface for managing your to-do it
 
 ## Usage
 
-1. Access the [Momentum website] using your preferred web browser.
+1. Access the [Momentum website](https://majufacirolli.github.io/momentum/) using your preferred web browser.
 2. Click on the "done" icon to add a new task. Enter the task description in the input field.
 3. Click on an existing task to mark it as completed/delete it from the list.
 
