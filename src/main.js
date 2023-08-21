@@ -1,10 +1,16 @@
 const sendBtn = document.getElementById('send-btn');
 const input = document.getElementById('text-field');
 const noteList = document.getElementById('note-list');
-//var notes = [];
- 
+const existingNotes = JSON.parse(localStorage.getItem('notes')) || [];
+
+loadNotesFromLocalStorage();
+
 sendBtn.addEventListener('click', () => {
     createNewNote();
+    
+    if(window.innerWidth < 500) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 })
 
 function createNewNote() {
@@ -20,7 +26,7 @@ function createNewNote() {
 
     noteList.appendChild(newItem);
 
-    //notes.push(newItem);
+    saveNoteToLocalStorage(newItem);
     
     newItem.addEventListener('click', () => {
         removeNote(newItem);
@@ -29,10 +35,29 @@ function createNewNote() {
     input.value = '';
 }
 
+function saveNoteToLocalStorage(note) {
+    existingNotes.push(note.innerText);
+    localStorage.setItem('notes', JSON.stringify(existingNotes));
+}
+
 function removeNote(note) {
     noteList.removeChild(note);
+    //update localStorage
+    const index = existingNotes.indexOf(note.innerText);
+    existingNotes.splice(index, 1);
+    localStorage.setItem('notes', JSON.stringify(existingNotes));
+}
 
-    /*const index = notes.indexOf(note);
-    notes.splice(index, 1);
-    console.log(notes)*/
+function loadNotesFromLocalStorage() {
+    existingNotes.forEach(noteText => {
+        const newItem = document.createElement('li');
+        newItem.classList.add('note');
+        newItem.innerText = noteText;
+    
+        noteList.appendChild(newItem);
+    
+        newItem.addEventListener('click', () => {
+            removeNote(newItem);
+        })
+    })
 }

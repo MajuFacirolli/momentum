@@ -18,6 +18,7 @@ Momentum provides a clean and user-friendly interface for managing your to-do it
 
 - **Add New Tasks:** Click on the "done" icon to add a new task to your to-do list.
 - **Remove Tasks:** Click on a task to delete it from the list.
+- **Keep tasks saved:** When reloading the page, your notes are saved.
 - **Responsive Design:** The website is responsive and adapts to various screen sizes.
 
 ## Usage
