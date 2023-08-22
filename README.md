@@ -29,8 +29,6 @@ Momentum provides a clean and user-friendly interface for managing your to-do it
 
 ## Author
 
-Designed and developed by Maria Julia Facirolli
-- [LinkedIn](https://www.linkedin.com/in/mariajuliafacirolli/)
-- [GitHub Profile](https://github.com/MajuFacirolli)
+Designed and developed by [Maria Julia Facirolli](https://www.linkedin.com/in/mariajuliafacirolli/)
 
 > Contributions to Momentum are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request. Please ensure that your code follows the existing coding style and conventions.
